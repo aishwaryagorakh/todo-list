@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="todo-container">
+        <div>
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new todo...">
+        <button onclick="addTodo()">Add</button>
+      
+
+        <select id="filterDropdown" onchange="filterTasks()">
+            <option value="all">Filter</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Pending</option>
+          </select>
+        </div>
+        <div id="tasks">
+          <!-- Todo items will be displayed here -->
+        </div>
+      
+        <div id="task-count"></div>
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
