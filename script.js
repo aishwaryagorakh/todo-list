@@ -59,3 +59,18 @@ function updateTaskCount(){
     var todoItems = tasksContainer.getElementsByClassName("todo-item");
     taskCount.textContent = "Total Tasks: " + todoItems.length;
 }
+
+function deleteAll(){
+  var tasksContainer = document.getElementById("tasks");
+  let taskCount = document.getElementById("task-count");
+  // const confirmDelete=confirm('are you sure you want to delete all the items from the list?');
+  if(tasksContainer){
+    tasksContainer.innerHTML="";
+  }
+  updateTaskCount();
+  addTodo();
+
+
+}
+ 
+
