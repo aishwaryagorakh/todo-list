@@ -1,3 +1,5 @@
+// function to add the list items
+
 function addTodo() {
     let taskInput = document.getElementById("taskInput");
     let tasksContainer = document.getElementById("tasks");
@@ -31,7 +33,7 @@ function addTodo() {
       updateTaskCount();
     }}
 
-    
+    // function to filter the list items
 
 function filterTasks() {
     let filter = document.getElementById("filterDropdown").value;
@@ -53,12 +55,17 @@ function filterTasks() {
 
     updateTaskCount();
   }
+
+// function to update the task count of the list items.
+
 function updateTaskCount(){
     let taskCount = document.getElementById("task-count");
     var tasksContainer = document.getElementById("tasks");
     var todoItems = tasksContainer.getElementsByClassName("todo-item");
     taskCount.textContent = "Total Tasks: " + todoItems.length;
 }
+
+// function to delete all the list items.
 
 function deleteAll(){
   var tasksContainer = document.getElementById("tasks");
